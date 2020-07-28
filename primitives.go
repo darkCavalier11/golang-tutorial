@@ -4,7 +4,7 @@ import "fmt"
 
 func main(){
 	// boolean
-	var answer bool = true //when undeclared is false
+	var answer bool //when undeclared is false
 	fmt.Println(answer)
 
 	// Numeric
