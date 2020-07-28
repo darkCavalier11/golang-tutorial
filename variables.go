@@ -3,6 +3,7 @@ package main
 import "fmt"
 import "strconv" //for converting int and float to ascii
 
+// --- Every variable ever declared must be used or ERROR--- //
 // global variables with a group that can be accessed
 var (
 	name string = "sumit kumar pradhan"
