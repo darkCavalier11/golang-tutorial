@@ -9,6 +9,7 @@ func main(){
 
 	// Numeric
 	// int: int8 int16 int32 int64, uint8 uint16 uint32 uint64
+	// int32 + int64 is error
 	var a int = 10
 	var b int = 3
 	fmt.Println(a / b) // 10 // 3 not float 3.33333..
@@ -36,7 +37,7 @@ func main(){
 	var z3 complex128 = complex(5, 9)
 	fmt.Printf("%T, %T\n", z1, z2)
 	fmt.Printf("%v, %T\n", real(z1), real(z1))
-	fmt.Printf("%v, %T\n", real(z3), real(z3))
+	fmt.Printf("%v, %T\n", imag(z3), imag(z3))
 	fmt.Println(z1 + z2)
 	fmt.Println(z1 - z2)
 	fmt.Println(z1 * z2)
@@ -44,6 +45,8 @@ func main(){
 
 	// strings utf8: 8bit
 	var s1 string = "Hello World!"
+	var s2 string = "From Go!"
+	fmt.Println(s1 + s2)
 	fmt.Printf("%v, %T\n", s1[2], s1[2]) // s1[2] is a char so %v returns the ascii value and therefore %T returns uint8
 	fmt.Printf("%v, %T\n", string(s1[2]), string(s1[2])) // explicit conversion
 
